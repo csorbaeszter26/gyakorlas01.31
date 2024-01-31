@@ -1,0 +1,32 @@
+*{
+    margin: 10px;
+    font-family:'Times New Roman', Times, serif;
+    background-color: bisque;
+}
+
+.szemelyes1 {
+    float: left;
+}
+
+.szemelyesek {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.regisztracioFields{ 
+    background-color: aquamarine;
+}
+
+br {
+    clear: both;
+}
+
+.kotelezomezo label::after {
+    content:"*";
+    color: red;
+}
+
+.cimek {
+    color: white;
+    background-color: green;
+}

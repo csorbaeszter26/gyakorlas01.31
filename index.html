@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="John Doe">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Űrlap gyakorlás</title>
+        <link rel="stylesheet" href="stilus.css">
+</head>
+<body>
+    <fieldset class="regisztracioFields">
+        <legend class="cimek">regisztráció</legend>
+        <label for="neve" class="kotelezomezo">felhasználónév </label> 
+        <input type="text" id="neve" name="nev" value="csak ékezetmentes betűk" size="20"><br>
+        <label for="jelszo" class="kotelezomezo">jelszó </label> 
+        <input type="text" id="jelszo" name="jelszo" value="min. 3 karakter" size="20"><br>
+        <label for="email" class="kotelezomezo">e-mail cím </label> 
+        <input type="text" id="email" name="email" value="vmi@vmi.hu" size="20"><br>
+         
+    </fieldset>
+    <fieldset>
+        <legend class="cimek">születés</legend>
+        <label for="neve">születési dátum </label>
+        <input type="date" id="mikor" name="mikor" >
+        <fieldset class="szemelyesek">
+            <legend class="cimek2">személyes</legend>
+
+            <div class ="szemelyes1">
+                <input type="checkbox" id="angol" name="angol" >
+                <label for="angol">angol </label><br>
+                <input type="checkbox" id="német" name="német" >
+                <label for="nemet">német </label><br>
+            </div>
+            
+            <div class="szemelyes2">
+                <select name="szakma" id="szakma">
+                    <option value="szfa1">SZFA1</option>
+                    <option value="szfa2">SZFA2</option>
+                    <option value="szfb">SZFB</option>
+                    <option value="irua1">IRUA1</option>
+                    <option value="irua2">IRUA2</option>
+                </select>
+            </div>
+            
+            <div class="szemelyes3">
+                <input type="radio" id="no" name="nem" >
+                <label for="no">nő </label><br>
+                <input type="radio" id="ferfi" name="nem" >
+                <label for="ferfi">férfi </label><br>
+            </div>
+        </fieldset>
+    </fieldset>
+    <div class="gomb" class="cimek">
+        <input type="submit" value="regisztráció">
+    </div>
+</body>
